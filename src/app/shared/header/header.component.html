@@ -1,0 +1,28 @@
+<nav class="navbar bg-body-tertiary">
+      <div class="container-fluid"> 
+      <div class="offcanvas offcanvas-start navigation-style" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Woohoo</h5>
+          <button type="button" class="new-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+         <mat-icon (currentColor)="'#30DA88'"> arrow_back_ios</mat-icon>
+           </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 white-text">
+            <li class="nav-item">
+           <a class="nav-link active" aria-current="page" routerLink="">  <mat-icon>home</mat-icon> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="domainsetting"><mat-icon>settings</mat-icon> Domain Setting</a>
+            </li>
+           
+          </ul>
+          
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Woohoo</a>
+    </div>
+  </nav>

@@ -1,0 +1,8 @@
+<div class="container">
+<div class="row">
+   <div class="col-lg-3" *ngFor="let item of menu">
+        <button type="button" class="btn rectangle-button" routerLink="{{item.route}}">{{item.name}}</button>
+    </div>
+</div>
+<router-outlet></router-outlet>
+</div>

@@ -1,1 +1,54 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$domain-setting-flow-primary: mat.define-palette(mat.$indigo-palette);
+$domain-setting-flow-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$domain-setting-flow-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$domain-setting-flow-theme: mat.define-light-theme((
+  color: (
+    primary: $domain-setting-flow-primary,
+    accent: $domain-setting-flow-accent,
+    warn: $domain-setting-flow-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($domain-setting-flow-theme);
+
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Fontone";
+  src: url("./fonts/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.dot-menu {
+  text-align: center;
+}
+.card-styles {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}

@@ -1,0 +1,37 @@
+.model-cont {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+p {
+    margin: 10px auto 10px auto;
+    width: 90%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.yes-btn {
+  width: 80%;
+  background: #d2271d;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: white;
+}
+.no-btn {
+  width: 80%;
+  border: 1px solid #dddddd;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+}
+
+mat-icon {
+  height: 54px;
+  width: 54px;
+}
